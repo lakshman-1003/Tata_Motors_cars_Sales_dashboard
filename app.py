@@ -22,7 +22,7 @@ TATA_LOGO = "images/Tata Motors logo.png"
 DEFAULT_CAR_IMAGE = "images/All tata cars.jpeg"
 
 # --- Sidebar Filters (left-aligned) ---
-st.sidebar.image(TATA_LOGO, use_column_width=True)
+st.sidebar.image(TATA_LOGO, use_container_width=True)
 st.sidebar.title("Filters")
 city_options = ["All"] + sorted(df["City"].unique())
 year_options = ["All"] + sorted(df["Date"].dt.year.astype(str).unique())
